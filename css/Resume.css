@@ -226,7 +226,7 @@
   }
   @media (max-width: 768px) {
     .u-col-1-2 {
-      width: 70%;
+      width: 85%;
       margin: 0 auto;
     }
   }
@@ -338,6 +338,36 @@
           user-select: none;
     transition: all 0.3s;
   }
+  .btn-contact {
+    transition: all 0.5s;
+    position: relative;
+    box-sizing: border-box;
+    font-size: 14px;
+  }
+  .btn-contact::before,.btn-contact::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 0;
+    top: 0;
+    transition: .5s;
+  }
+  .btn-contact::after {
+    right: 0;
+    background-color: rgba(0,0,0,0.7);
+  }
+  .btn-contact::before {
+    left: 0;
+    background-color: rgba(255,255,255,0.7);
+  }
+
+  .btn-contact:hover::before,.btn-contact:hover::after {
+    width: 100%;
+  }
+  .btn-contact:hover span {
+    color: rgba(255,255,255,0.8);
+    z-index: 10;
+  } 
 /* ---------main share end-----------*/
 
 /* ---------main wrapper start-----------*/
@@ -702,8 +732,12 @@
     border: 1px solid #000;
     height: 230px;
   }
+  .skill .skill-card__title {
+    font-size: 18px;
+  }
   .skill-card__content {
     opacity: 0.3;
+    font-size: 16px;
     transition: .5s
   }
   @media (max-width: 768px) {
@@ -712,9 +746,8 @@
     padding: 20px 20px 80px 20px;
     }
     .skill-card__content p {
-      line-height: 30px;
+      line-height: 1.5;
       margin: 0;
-      font-size: 12px;
     }
   }
   .skill .skill-card:hover {
@@ -867,10 +900,8 @@
     .work .work-item .work-item__intro {
     left: 0;
     text-align: center;
+    font-size: 14px;
     }
-  }
-  .work .work-item .work-item__intro.second {
-    /* left: -30%; */
   }
   @media (max-width: 768px) {
     .work .work-item .work-item__intro.second {
@@ -904,7 +935,7 @@
     opacity: 0;
     visibility: hidden;
   }
-  .work .btn-group {
+  /* .work .btn-group {
     margin-top: 50px;
     margin-bottom: 50px;
   }
@@ -940,7 +971,7 @@
   .work .btn-view-more:hover span {
     color: rgba(255,255,255,0.8);
     z-index: 10;
-  }
+  } */
   .work .text-btn {
     display: inline-block;
     vertical-align: top;
@@ -962,9 +993,6 @@
     text-align: center;
     margin: 15px 0px 45px 0px;
     }
-  }
-  .work .text-btn.second {
-    /* left: -70%; */
   }
   @media (max-width: 768px) {
     .work .text-btn.second {
@@ -1060,6 +1088,9 @@
     margin-bottom: 15px;
     letter-spacing: 3px;
   }
+  .contact .skills p {
+    font-size: 14px;
+  }
   .contact .info .info__email a, .contact .info .info__phone a {
     font-size: 16px;
     font-family: "Helvetica", "roboto", "Noto Sans TC", arial, sans-serif;
@@ -1084,6 +1115,14 @@
     margin-top: 50px;
     margin-bottom: 50px;
     padding: 0px 5vw;
+  }
+  @media (max-width: 768px) {
+    .contact .skills p {
+      font-size: 12px;
+    }
+    .contact .info .info__email a, .contact .info .info__phone a {
+      font-size: 12px;
+    }
   }
   /* ---------main footer end-----------*/
   

@@ -58,6 +58,7 @@
 #one:target .detail-row,#two:target .detail-row,#three:target .detail-row,#four:target .detail-row {
 	position: fixed;
 	width: 100%;
+	height: 100%;
 	padding: 80px 40px;
 	z-index: 10;
 	cursor: initial;
@@ -144,7 +145,7 @@
 		margin: 20px 0px;
 	}
 	.detail-col-1-2:nth-child(2) {
-		height: 20vh;
+		height: 25vh;
 	}
 	.detail-col-1-2:nth-child(1):hover > .picture-filter,.detail-col-1-2:nth-child(1):hover > .picture-filter-2 {
 		width: 100%;
