@@ -44,20 +44,16 @@ $(document).ready(function () {
     };
     // header-control-end----------------
 
-
-
-    //timeline-control-start--------------
-    $('.timeline-card').each(function () {
+    //skill control-start
+    $('.skill-card__content').each(function(){
       let thisPos = $(this).offset().top;
-      if (scrollDistance + 300 >= thisPos) {
-        $(this).addClass('experienceAn');
-        console.log(scrollDistance)
-        console.log(thisPos)
-        console.log(windowHeight)
+      if(scrollDistance + 500 >= thisPos) {
+        $(this).addClass('key-100');
       }
-    });
-    //timeline-control-end-----------------
+    })
 
+
+    //skill control-end
 
     //image-control-start------------------
     $('.image').each(function () {
@@ -144,6 +140,53 @@ class MouseCursor {
 }
 const mouseCursor = new MouseCursor();
 mouseCursor.render();
+
+
+
+//charming scope
+
+const hoverEffect = {
+  button: document.querySelector('.btn-contact'),
+  //觸發按鈕
+  personal: document.querySelector('.person__heading')
+  //文字
+};
+
+charming(hoverEffect.personal);
+//把文字拆成span
+
+
+hoverEffect.personalLetters = [...hoverEffect.personal.querySelectorAll('span')]
+//選取所有span
+hoverEffect.personalLetters.sort(() => Math.round(Math.random()) - 0.5);
+//順序亂數抓取，0.5 ~ -0.5
+
+
+var letters = hoverEffect.personalLetters.filter(()=> Math.random() < .5);
+//篩選出小於0.5
+var otherletters = hoverEffect.personalLetters.filter(el => letters.indexOf(el) < 0);
+//其餘小於0
+
+
+const onEnterHoverFn = () => {
+  letters = hoverEffect.personalLetters.filter(()=> Math.random() < .5);
+  otherletters = hoverEffect.personalLetters.filter(el => letters.indexOf(el) < 0);
+
+  new TimelineMax({onComplete: () => {} })
+  .staggerTo(letters,0.2,{
+    ease: Quad.easeIn,
+    y: '-100%',
+    opacity: 0
+  },0.04,0)
+  .staggerTo(letters,0.6,{
+    ease: Quint.easeOut,
+    startAt: {y: '55%'},
+    y: '0%',
+    opacity: 1
+  },0.04,0.4)
+};
+
+hoverEffect.button.addEventListener('mouseenter',onEnterHoverFn)
 
 
 

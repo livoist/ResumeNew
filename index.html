@@ -16,12 +16,12 @@
 
 <body>
   <div id='mousemoveScope'>
-  <!-- mouse scope -->
+    <!-- mouse scope -->
 
     <!-- mouse event obj start -->
     <div class="mousemoveScope__cursor">
       <div class="mousemoveScope__cursor__pointer u-z-index_1">
-        <div class="view-txt">view</div>
+        <!-- <div class="view-txt">view</div> -->
       </div>
     </div>
     <!-- mouse event obj end -->
@@ -81,31 +81,43 @@
               </a>
               <div class="link-group">
                 <ul>
-                  <li class="nomal-menu__item"><a class="scrollTop" href="#person"><span>ABOUT</span></a>
+                  <li class="nomal-menu__item"><a class="scrollTop" href="#person">ABOUT</a>
                   </li>
-                  <li class="nomal-menu__item"><a class="scrollTop" href="#skill"><span>SKILL</span></a></li>
+                  <li class="nomal-menu__item"><a class="scrollTop" href="#skill">SKILL</a></li>
                   <!-- <li class="nomal-menu__item"><a class="scrollTop"
                       href="#experience"><span>EXPERIENCE</span></a></li> -->
-                  <li class="nomal-menu__item"><a class="scrollTop" href="#work"><span>PORTFOLIO</span></a>
+                  <li class="nomal-menu__item"><a class="scrollTop" href="#work">PORTFOLIO</a>
                   </li>
-                  <li class="nomal-menu__item"><a class="scrollTop" href="#contact"><span>CONTACT</span></a>
+                  <li class="nomal-menu__item"><a class="scrollTop" href="#contact">CONTACT</a>
                   </li>
                 </ul>
               </div>
 
-              <div class="nav u-z-index_7"><a class="menu-toggle"
-                  href="#popup-overlay"><span></span><span></span><span></span></a>
+              <div class="nav u-z-index_7">
+                <a class="menu-toggle" href="#popup-overlay"><span></span><span></span><span></span></a>
                 <div class="popup-menu" id="popup-overlay">
-                  <div class="container"><a class="popup-menu__close u-z-index_7"
-                      href="#!"><span></span><span></span></a>
-                    <ul class="u-pt-48">
-                      <li><a class="popup-menu__item" href="#person">ABOUT</a></li>
-                      <li><a class="popup-menu__item" href="#skill">SKILL</a></li>
-                      <!-- <li><a class="popup-menu__item" href="#experience">EXPERIENCE</a></li> -->
-                      <li><a class="popup-menu__item" href="#work">PORTFOLIO</a></li>
-                      <li><a class="popup-menu__item" href="#contact">CONTACT</a></li>
+                  <a class="popup-menu__close u-z-index_7" href="#!"><span></span><span></span></a>
+                  <div class="bar-container bg-black u-px-30">
+                    <ul class="u-pt-100">
+                      <li><a class="popup-menu__item ts-100" href="#person">ABOUT</a></li>
+                      <li><a class="popup-menu__item ts--100" href="#skill">SKILL</a></li>
+
+                      <li><a class="popup-menu__item ts-100" href="#work">PORTFOLIO</a></li>
+                      <li><a class="popup-menu__item ts--100" href="#contact">CONTACT</a></li>
                     </ul>
                   </div>
+                  <!-- <div class="bar-container2 u-px-30">
+                      <a class="popup-menu__close u-z-index_7" href="#!"><span></span><span></span></a>
+                      <div class="info u-pt-100">
+                          <div class="subtitle">CONTACT</div>
+                          <div class="info__email"><a href="mailto:waterblue104@gmail.com">waterblue104@gmail.com</a></div>
+                          <div class="info__phone"><a href="tel:0981896398">0981896398</a></div>
+                        </div>
+                        <div class="social-bar"><a class="fab fa-github-square" href="https://github.com/livoist"
+                            target="_blank"></a><a class="fab fa-instagram" href="https://www.instagram.com/waterblue104/"
+                            target="_blank"></a><a class="fab fa-medium" href="https://medium.com/@waterblue104"
+                            target="_blank"></a></div>
+                  </div> -->
                 </div>
               </div>
             </div>
@@ -114,7 +126,7 @@
         <!-- header end -->
 
         <div class="main">
-          
+
           <!-- session 1 start -->
           <div class="person" id="person">
             <div class="person__bg">
@@ -127,8 +139,8 @@
                   <p>Front-end Developer</p>
                 </div>
                 <div class="person__content u-d-flex u-column">
-                  <div class="person__heading">HELLO I'M BEN</div>
-                <a class="btn btn-contact scrollTop" href="#contact"><span>Contact</span></a>
+                  <div class="person__heading">Hello I'm Ben</div>
+                  <a class="btn btn-contact scrollTop" href="#contact"><span>Contact</span></a>
                 </div>
               </div>
             </div>
@@ -142,82 +154,77 @@
                 <h2>Skill</h2>
               </div>
               <div class="skill-group">
-                <div class="bg-2" data-stellar-background-ratio="0.5"></div>
-                <div class="u-row-x-center">
+
+                <div class="u-row-x-center u-mb-50">
                   <div class="u-col-1-2">
                     <div class="skill-card">
-                      <div class="skill-card__inneer">
-                        <h4 class="skill-card__title u-text-center">HTML5</h4>
-                      </div>
-                      <div class="skill-card__content u-text-center">
-                        <p>Familiar with HTML5 to build web page architecture and can write in pre-processing language
-                          Pug
-                        </p>
+                      <h4 class="skill-card__title u-text-center">HTML5</h4>
+                      <div class="skill-card__content">Familiar with HTML5 to build web page architecture and can write in
+                        pre-processing language
+                        Pug
                       </div>
                     </div>
                   </div>
                   <div class="u-col-1-2">
                     <div class="skill-card">
-                      <div class="skill-card__inneer">
-                        <h4 class="skill-card__title u-text-center">CSS3</h4>
-                      </div>
-                      <div class="skill-card__content u-text-center">
-                        <p>Familiar with CSS3 to style web pages and write with SCSS/SASS</p>
-                      </div>
+
+                      <h4 class="skill-card__title u-text-center">CSS3</h4>
+                      <div class="skill-card__content">Familiar with CSS3 to style web pages and write with
+                        SCSS/SASS</div>
+
                     </div>
                   </div>
                 </div>
-                <div class="u-row-x-center">
+                <div class="u-row-x-center u-mb-50">
                   <div class="u-col-1-2">
                     <div class="skill-card">
-                      <div class="skill-card__inneer">
-                        <h4 class="skill-card__title u-text-center">JavaScript</h4>
-                      </div>
-                      <div class="skill-card__content u-text-center">
-                        <p>Write programs using native JavaScript (ES6). Objects, arrays, DOM operations, understanding
-                          object orientation, inheritance, prototype chain, closure concepts</p>
-                      </div>
+
+                      <h4 class="skill-card__title u-text-center">JavaScript</h4>
+                      <div class="skill-card__content">Write programs using native JavaScript (ES6). Objects,
+                        arrays, DOM operations, understanding
+                        object orientation, inheritance, prototype chain, closure concepts</div>
+
                     </div>
                   </div>
                   <div class="u-col-1-2">
                     <div class="skill-card">
-                      <div class="skill-card__inneer">
-                        <h4 class="skill-card__title u-text-center">Framework</h4>
-                      </div>
-                      <div class="skill-card__content u-text-center">
-                        <p>Can use the application framework to achieve better components, state management, and apply
-                          third-party library plug-ins</p>
-                      </div>
+
+                      <h4 class="skill-card__title u-text-center">Framework</h4>
+                      <div class="skill-card__content">Can use the application framework to achieve better
+                        components, state management, and apply
+                        third-party library plug-ins</div>
+
                     </div>
                   </div>
                 </div>
-                <div class="u-row-x-center">
+                <div class="u-row-x-center u-mb-50">
                   <div class="u-col-1-2">
                     <div class="skill-card">
-                      <div class="skill-card__inneer">
-                        <h4 class="skill-card__title u-text-center">Git</h4>
-                      </div>
-                      <div class="skill-card__content u-text-center">
-                        <p>Familiar with the application version control tool Git for development and management.</p>
-                      </div>
+
+                      <h4 class="skill-card__title u-text-center">Git</h4>
+                      <div class="skill-card__content">Familiar with the application version control tool Git for
+                        development and management.</div>
+
                     </div>
                   </div>
                   <div class="u-col-1-2">
                     <div class="skill-card">
-                      <div class="skill-card__inneer">
-                        <h4 class="skill-card__title u-text-center">RWD</h4>
-                      </div>
-                      <div class="skill-card__content u-text-center">
-                        <p>The Responsive web design concept is designed to fit the web page of each browser size,
-                          providing a better user experience.</p>
-                      </div>
+
+
+                      <h4 class="skill-card__title u-text-center">RWD</h4>
+
+                      <div class="skill-card__content">
+                        <div></div>The Responsive web design concept is designed to fit the web
+                        page of each browser size,
+                        providing a better user experience.</div>
+
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        <!-- session 2 end -->
+          <!-- session 2 end -->
 
 
           <!-- <div class="autobiographyAll" id="experience">
@@ -297,8 +304,7 @@
                     <div class="u-col-1-2">
                       <div class="imgbox">
                         <div class="imgbox__inner imgbox__inner--4-3">
-                          <div class="image bg-img"
-                            style="background-image: url('other/nordic.png')">
+                          <div class="image bg-img" style="background-image: url('other/nordic.png')">
                           </div>
                         </div>
                       </div>
@@ -307,7 +313,8 @@
                       <div class="work-item__text">
                         <h3 class="work-item__title">NORDIC</h3>
                         <p class="work-item__intro">
-                            E-commerce website developed by Vue.js, Bootaprap, Jquery, features include shopping cart, form (form verification), and back-end database.</p>
+                          E-commerce website developed by Vue.js, Bootaprap, Jquery, features include shopping cart,
+                          form (form verification), and back-end database.</p>
                         <a class="text-btn" href="#one">View Portfolio</a>
                       </div>
                     </div>
@@ -316,8 +323,7 @@
                     <div class="u-col-1-2">
                       <div class="imgbox">
                         <div class="imgbox__inner imgbox__inner--4-3">
-                          <div class="image bg-img"
-                            style=" background-image: url('other/theater.png')">
+                          <div class="image bg-img" style=" background-image: url('other/theater.png')">
                           </div>
                         </div>
                       </div>
@@ -325,7 +331,8 @@
                     <div class="u-col-1-2">
                       <div class="work-item__text second">
                         <h3 class="work-item__title second">THEATER</h3>
-                        <p class="work-item__intro second">Small cinema developed with Vue.js and TweenMax, features include shopping cart, my favorite.
+                        <p class="work-item__intro second">Small cinema developed with Vue.js and TweenMax, features
+                          include shopping cart, my favorite.
                           Lorem Ipsum</p><a class="text-btn second" href="#two">View Portfolio</a>
                       </div>
                     </div>
@@ -334,8 +341,7 @@
                     <div class="u-col-1-2">
                       <div class="imgbox">
                         <div class="imgbox__inner imgbox__inner--4-3">
-                          <div class="image bg-img"
-                            style="background-image: url('other/particle.png')">
+                          <div class="image bg-img" style="background-image: url('other/particle.png')">
                           </div>
                         </div>
                       </div>
@@ -344,30 +350,29 @@
                       <div class="work-item__text">
                         <h3 class="work-item__title">PARTICLE</h3>
                         <p class="work-item__intro">
-                            Particle generators developed using Canvas, Gui, TweenMax</p>
+                          Particle generators developed using Canvas, Gui, TweenMax</p>
                         <a class="text-btn" href="#three">View Portfolio</a>
                       </div>
                     </div>
                   </div>
                   <div class="u-row-2-reverse mb-70">
-                      <div class="u-col-1-2">
-                        <div class="imgbox">
-                          <div class="imgbox__inner imgbox__inner--4-3">
-                            <div class="image bg-img"
-                              style=" background-image: url('other/wine6.png')">
-                            </div>
+                    <div class="u-col-1-2">
+                      <div class="imgbox">
+                        <div class="imgbox__inner imgbox__inner--4-3">
+                          <div class="image bg-img" style=" background-image: url('other/wine6.png')">
                           </div>
                         </div>
                       </div>
-                      <div class="u-col-1-2">
-                        <div class="work-item__text second">
-                          <h3 class="work-item__title second">WINE</h3>
-                          <p class="work-item__intro second">
-                              Image concept website developed with rellax.js and fullPage.js with red wine as the theme
-                            </p><a class="text-btn second" href="#four">View Portfolio</a>
-                        </div>
+                    </div>
+                    <div class="u-col-1-2">
+                      <div class="work-item__text second">
+                        <h3 class="work-item__title second">WINE</h3>
+                        <p class="work-item__intro second">
+                          Image concept website developed with rellax.js and fullPage.js with red wine as the theme
+                        </p><a class="text-btn second" href="#four">View Portfolio</a>
                       </div>
                     </div>
+                  </div>
                 </div>
               </div>
               <!-- <div class="btn-group">
@@ -376,9 +381,9 @@
               </div> -->
             </div>
           </div>
-      <!-- session 3 end -->
+          <!-- session 3 end -->
 
-      <!-- session 4 start -->
+          <!-- session 4 start -->
           <div class="contact" id="contact">
             <div class="container">
               <p class="contact__description">Hi I'm Ben I'm a Front-end Developer</p>
@@ -387,9 +392,10 @@
               </div>
               <div class="skills">
                 <div class="subtitle">SKILLS</div>
-                <p>HTML5 / Pug / CSS3 / SCSS / SASS / JavaScript / Git / RWD / JQuery / Vue.js / Bootstrap / Canvas / GSAP(TweenMax)
-                <br>
-                <br>Learning ( Three.js 、 UX/UI concept 、 webGL 、 p5.js )</p>
+                <p>HTML5 / Pug / CSS3 / SCSS / SASS / JavaScript / Git / RWD / JQuery / Vue.js / Bootstrap / Canvas /
+                  GSAP(TweenMax)
+                  <br>
+                  <br>Learning ( Three.js 、 UX/UI concept 、 webGL 、 p5.js )</p>
               </div>
               <div class="info">
                 <div class="subtitle">CONTACT</div>
@@ -421,7 +427,7 @@
               </form> -->
             </div>
           </div>
-        <!-- session 4 end -->
+          <!-- session 4 end -->
 
         </div>
         <!--mainPage-end------------------->
@@ -443,8 +449,7 @@
   <!-- side page start -->
   <div id="one">
     <div class="detail-row">
-      <div class="detail-col-1-2 bg-img"
-        style="background-image: url('other/nordic.png')">
+      <div class="detail-col-1-2 bg-img" style="background-image: url('other/nordic.png')">
         <div class="picture-filter">
         </div>
         <div class="picture-filter-2">
@@ -459,10 +464,12 @@
         <div class="tag bold mb-15">Tag：
         </div>
         <div class="tag-content mb-50">
-          <span>HTML</span> <span>CSS</span> <span>Vue.js</span> <span>Bootstrap</span> <span>JQuery</span> <span>axios</span> <span>Vue-cli2</span>
+          <span>HTML</span> <span>CSS</span> <span>Vue.js</span> <span>Bootstrap</span> <span>JQuery</span>
+          <span>axios</span> <span>Vue-cli2</span>
         </div>
         <div class="content">
-          An e-commerce website designed with the theme of Northern Europe, and try to package a complete project with webpack.</div>
+          An e-commerce website designed with the theme of Northern Europe, and try to package a complete project with
+          webpack.</div>
         <a href="https://livoist.github.io/Nordic/dist/index.html#/HomePage" class="website-link" target="_blank">
           <span>https://livoist.github.io/Nordic/dist/index.html#/HomePage</span></a>
         <a href="#!" class="detail-back">
@@ -479,8 +486,7 @@
 
   <div id="two">
     <div class="detail-row">
-      <div class="detail-col-1-2 bg-img"
-        style="background-image: url('other/theater.png')">
+      <div class="detail-col-1-2 bg-img" style="background-image: url('other/theater.png')">
         <div class="picture-filter">
         </div>
         <div class="picture-filter-2">
@@ -497,7 +503,8 @@
         <div class="tag-content mb-50">
           <span>HTML</span> <span>CSS</span> <span>Vue.js</span> <span>TweenMax</span> <span>JQuery</span>
         </div>
-        <div class="content">Small cinema, and try to use TweenMax for simple animation effects, and more familiar with Vue application.</div>
+        <div class="content">Small cinema, and try to use TweenMax for simple animation effects, and more familiar with
+          Vue application.</div>
         <a href="https://livoist.github.io/Theater/Movie.html" class="website-link" target="_blank">
           <span>https://livoist.github.io/Theater/Movie.html</span></a>
         <a href="#!" class="detail-back">
@@ -514,8 +521,7 @@
 
   <div id="three">
     <div class="detail-row">
-      <div class="detail-col-1-2 bg-img"
-        style="background-image: url('other/particle.png')">
+      <div class="detail-col-1-2 bg-img" style="background-image: url('other/particle.png')">
         <div class="picture-filter">
         </div>
         <div class="picture-filter-2">
@@ -530,9 +536,11 @@
         <div class="tag bold mb-15">Tag：
         </div>
         <div class="tag-content mb-50">
-          <span>HTML</span> <span>CSS</span> <span>JavaScript</span> <span>Canvas</span> <span>charm.js</span> <span>GUI</span>
+          <span>HTML</span> <span>CSS</span> <span>JavaScript</span> <span>Canvas</span> <span>charm.js</span>
+          <span>GUI</span>
         </div>
-        <div class="content">Practice the particle generator made with the HTML5 property Canvas, and add a variety of method changes to the GUI.</div>
+        <div class="content">Practice the particle generator made with the HTML5 property Canvas, and add a variety of
+          method changes to the GUI.</div>
         <a href="https://livoist.github.io/Particle/Particle.html" class="website-link" target="_blank">
           <span>https://livoist.github.io/Particle/Particle.html</span></a>
         <a href="#!" class="detail-back">
@@ -553,8 +561,7 @@
 
   <div id="four">
     <div class="detail-row">
-      <div class="detail-col-1-2 bg-img"
-        style="background-image: url('other/wine6.png')">
+      <div class="detail-col-1-2 bg-img" style="background-image: url('other/wine6.png')">
         <div class="picture-filter">
         </div>
         <div class="picture-filter-2">
@@ -564,7 +571,7 @@
       <div class="detail-col-1-2">
         <div class="titleAll mb-40">
           <div class="title bold mb-15">Wine</div>
-          <div class="date mb-15">2018/7/5</div>
+          <div class="date mb-15">2018/7/5</div>.
         </div>
         <div class="tag bold mb-15">Tag：
         </div>
@@ -602,4 +609,5 @@
 <script src="js/uncover.js"></script>
 <script src="js/MyUncover.js"></script>
 <script src="js/anime.min.js"></script>
+<script src="js/charming.min.js"></script>
 <script src="js/resume.js"></script>
