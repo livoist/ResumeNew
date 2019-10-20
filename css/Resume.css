@@ -820,10 +820,15 @@
     .skill .skill-card {
     margin-bottom: 40px;
     padding: 20px 20px 80px 20px;
+    flex-direction: column;
     }
     .skill-card__content p {
       line-height: 26px;
       margin: 0;
+    }
+    .skill .skill-card__title::after {
+      top: 90%;
+      left: 110px;
     }
   }
   .skill .skill-card:hover {
@@ -834,95 +839,6 @@
     opacity: 1;
   }
 
-  
-  /* .experience {
-    padding: 80px 5vw;
-    text-align: center;
-  }
-  .experience .timeline-group {
-    max-width: 960px;
-    margin: 0 auto;
-    margin-top: 120px;
-    width: 100%;
-  }
-  .experience .timeline-group .timeline {
-    width: 3px;
-    height: 100%;
-    background-color: white;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.6);
-  }
-  @media (max-width: 768px) {
-    .timeline {
-    display: none;
-    }
-  }
-  .experience .timeline-group .timeline-cards__row {
-    transition: 0.5s;
-  }
-  .experience .timeline-group .timeline-cards__row > .timeline-card:hover {
-    border: 1px solid black;
-  }
-  .experience .timeline-group .timeline-cards__row > .timeline-card:hover:before {
-    background-color: black;
-    border: 1px solid white;
-  }
-  .experience .timeline-group .timeline-cards__row:nth-child(odd) {
-    display: flex;
-    justify-content: flex-start;
-  }
-  .experience .timeline-group .timeline-cards__row:nth-child(odd) > :before {
-    -webkit-transform: translate(50%, 50%);
-          transform: translate(50%, 50%);
-  }
-  .experience .timeline-group .timeline-cards__row:hover {
-    -webkit-transform: translateY(-10px);
-          transform: translateY(-10px);
-  }
-  .experience .timeline-group .timeline-cards__row:nth-child(even) {
-    display: flex;
-    justify-content: flex-end;
-  }
-  .experience .timeline-group .timeline-cards__row:nth-child(even) > :before {
-    left: -24px;
-    -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  }
-  .experience .timeline-group .timeline-cards__row .timeline-card {
-    padding: 24px;
-    background-color: white;
-    width: calc(50% - 24px);
-    box-sizing: border-box;
-    opacity: 0;
-    transition: all 0.3s;
-    color: black;
-  }
-  @media (max-width: 768px) {
-    .experience .timeline-group .timeline-cards__row .timeline-card {
-    margin: 20px 0px;
-    width: 100%;
-    }
-  }
-  .experience .timeline-group .timeline-cards__row .timeline-card:before {
-    content: "";
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    background-color: white;
-    top: 50%;
-    right: -24px;
-    transition: 0.5s;
-  }
-  @media (max-width: 768px) {
-    .experience .timeline-group .timeline-cards__row .timeline-card:before {
-    display: none;
-    }
-  } */
 
   /* ---------main skill end-----------*/
 
@@ -1006,43 +922,7 @@
     opacity: 0;
     visibility: hidden;
   }
-  /* .work .btn-group {
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
-  .work .btn-view-more {
-    width: 60px;
-    line-height: 60px;
-    transition: all 0.2s;
-    padding: 8px 24px;
-    position: relative;
-    box-sizing: border-box;
-    font-size: 16px;
-  }
-  .work .btn-view-more::before,.work .btn-view-more::after {
-    content: '';
-    position: absolute;
-    height: 100%;
-    width: 0;
-    top: 0;
-    transition: .5s
-  }
-  .work .btn-view-more::after {
-    right: 0;
-    background-color: black;
-  }
-  .work .btn-view-more::before {
-    left: 0;
-    background-color: gray;
-  }
 
-  .work .btn-view-more:hover::before,.work .btn-view-more:hover::after {
-    width: 100%;
-  }
-  .work .btn-view-more:hover span {
-    color: rgba(255,255,255,0.8);
-    z-index: 10;
-  } */
   .work .text-btn {
     display: inline-block;
     vertical-align: top;

@@ -112,7 +112,7 @@ class MouseCursor {
       ease: Power4.easeIn,
     });
   }
-
+//監聽範圍
   handleMousePos() {
     this.page.addEventListener('mouseenter', this.enterMouse);
     this.page.addEventListener('mousemove', this.moveMousePos, false);
@@ -126,9 +126,10 @@ class MouseCursor {
       e.target.parentElement.tagName === 'A' || e.target.tagName === 'IMG' || e.target.classList.contains('fa-long-arrow-alt-up')
     ) {
       document.querySelector('html').classList.toggle('is-hover');
+      //接著再切換class底下更動互動元件的變化
     }
   }
-//滑鼠監聽
+//滑鼠特定hover樣式更新監聽
   handleLinkHover() {
     this.page.addEventListener('mouseover', this.updateOnHover.bind(this));
     this.page.addEventListener('mouseout', this.updateOnHover.bind(this));
@@ -150,14 +151,14 @@ const hoverEffect = {
   //觸發按鈕
   personal: document.querySelector('.person__heading')
   //文字
-};
+}
 
 charming(hoverEffect.personal);
-//把文字拆成span
+//把文字拆開並加上標籤span
 
 
 hoverEffect.personalLetters = [...hoverEffect.personal.querySelectorAll('span')]
-//選取所有span
+//選取所有span並推入陣列
 hoverEffect.personalLetters.sort(() => Math.round(Math.random()) - 0.5);
 //順序亂數抓取，0.5 ~ -0.5
 
@@ -165,7 +166,7 @@ hoverEffect.personalLetters.sort(() => Math.round(Math.random()) - 0.5);
 var letters = hoverEffect.personalLetters.filter(()=> Math.random() < .5);
 //篩選出小於0.5
 var otherletters = hoverEffect.personalLetters.filter(el => letters.indexOf(el) < 0);
-//其餘小於0
+//其餘小於0，剩下的另一半
 
 
 const onEnterHoverFn = () => {
