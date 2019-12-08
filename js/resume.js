@@ -45,12 +45,12 @@ $(document).ready(function () {
     // header-control-end----------------
 
     //skill control-start
-    $('.skill-card__content').each(function(){
-      let thisPos = $(this).offset().top;
-      if(scrollDistance + 500 >= thisPos) {
-        $(this).addClass('key-100');
-      }
-    })
+    // $('.skill-card__content').each(function(){
+    //   let thisPos = $(this).offset().top;
+    //   if(scrollDistance + 500 >= thisPos) {
+    //     $(this).addClass('key-100');
+    //   }
+    // })
 
 
     //skill control-end

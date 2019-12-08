@@ -351,6 +351,9 @@ h2 {
   margin-top: 24px;
   letter-spacing: 1px;
  }
+ h3 {
+   margin: 0;
+ }
 p {
  font-size: 12px;
  line-height: 26px;

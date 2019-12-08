@@ -13,7 +13,7 @@
 }
 @media (max-width: 768px) {
 	.mb-40 {
-		margin-bottom: 20px;
+		margin-bottom: 0px;
 	}
 	.mb-50 {
 		margin-bottom: 25px;
@@ -30,25 +30,15 @@
 .detail-row {
 	display: flex;
 	justify-content: center;
-	height: 0;
-	width: 0;
+	height: 100%;
+	width: 0%;
 	background-color: white;
 	box-sizing: border-box;
 	transition: width .5s,padding .5s;
 	align-items: center;
 	position: fixed;
-	left: 0;
+	right: 0;
 	top: 0;
-}
-.detail-row::before {
-	content: '';
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	width: 95%;
-	height: 90%;
-	transform: translate(-50%,-50%);
-	/* border: 3px solid #000; */
 }
 @media (max-width: 768px) {
 .detail-row {
@@ -163,7 +153,8 @@
 }
 .bg-img {
  background-position: center center;
- background-size: 100% 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 .title {
 	font-size: 28px;

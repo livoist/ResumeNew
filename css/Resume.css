@@ -219,7 +219,7 @@
   }
   .u-col-1-2 {
     width: 50%;
-    margin: 20px;
+    margin: auto 0;
   }
   @media (max-width: 768px) {
     .u-col-1-2 {
@@ -227,15 +227,6 @@
       margin: 0 auto;
     }
   }
-  /* .u-form-col-1-2 {
-    width: calc(50% - 15px);
-  }
-  
-  .u-flex-column {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  } */
   @media (max-width: 768px) {
     .u-flex-column {
       flex-direction: column;
@@ -418,7 +409,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 50px 10px 50px;
+    padding: 10px 50px 5px;
     transition: all 1s;
   }
   @media (max-width: 1024px) {
@@ -427,68 +418,40 @@
     }
   }
   .navbar .nav-logo {
-    width: 40px;
-    height: 40px;
-    top: -10px;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
   }
   .navbar .nav-logo span {
-    position: absolute;
-    bottom: -25px;
-    left: 50%;
-    transform: translateX(-50%); 
     font-family: "Raleway", "Helvetica", "roboto";
-    font-size: 12px;
-    font-weight: bold;
     letter-spacing: 1px;
+    position: relative;
   }
-  .navbar .nav-logo span:after,.navbar .nav-logo span:before {
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    transform: rotate(45deg);
-    transition: .5s
+  .navbar .nav-logo span:nth-child(1) {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 6px;
+    padding-bottom: 6px;
   }
-  .navbar .nav-logo span:after {
-    left: -10px;
-    top: -34px;
-    border-bottom: 3px solid #000;
+  .navbar .nav-logo span:nth-child(2) {
+    font-size: 12px;
+    letter-spacing: 12px;
   }
-  .navbar .nav-logo span:before {
-    bottom: 42px;
-    right: -12px;
-    border-top: 3px solid #000;
-  }
-  .navbar .nav-logo:hover::after {
-    border-color: #000;
-  }
-  .navbar .nav-logo:hover::before {
-    border-color: gray;
-  }
-  @media (max-width: 1024px) {
-    .navbar .nav-logo {
-      transform: scale(0.7);
+  @media (max-width: 768px) {
+    .navbar .nav-logo span:nth-child(1) {
+      font-size: 4vmin;
+      letter-spacing: 4px;
+    }
+    .navbar .nav-logo span:nth-child(2) {
+      font-size: 2vmin;
+      letter-spacing: 6px;
     }
   }
-  .navbar .nav-logo:before,.navbar .nav-logo:after {
-    content: '';
-    position: absolute;
-    width: 50%;
-    height: 50%;
-    border: 5px solid #000;
-    transition: .5s;
-    transform: rotate(45deg);
-  }
-  .navbar .nav-logo:before {
-    right: 10px;
-    top: 10%;
-  }
-  .navbar .nav-logo:after {
-    left: 12px;
-    bottom: 10%;
-    border-color: gray;
-  }
+
+
+
   .nav {
     visibility: hidden;
     opacity: 0;
@@ -741,14 +704,9 @@
 
 /* ---------main skill start-----------*/
   .skill {
-    padding-top: 100px;
+    padding-top: 60px;
     box-sizing: border-box;
   }
-  /* @media (max-width: 768px) {
-    .skill .skill-group .col-1-2 {
-      width: 100%;
-    }
-  } */
   .skill .skill-card {
     padding: 30px;
     position: relative;
@@ -788,7 +746,7 @@
     transform: rotate(45deg);
   }
   .skill-card__content {
-    opacity: 0;
+    opacity: 1;
     font-size: 14px;
     display: inline-block;
     text-align: left;
@@ -800,7 +758,7 @@
     padding: 10px;
     transition: transform 0.3s ease-in;
   }
-  .key-100 {
+  /* .key-100 {
   animation: key-100 1s both
   }
   @keyframes key-100 {
@@ -814,7 +772,7 @@
       transform: scaleX(1);
       opacity: 1;
     }
-  }
+  } */
   @media (max-width: 768px) {
     .skill .skill-card {
     margin-bottom: 40px;
@@ -843,15 +801,16 @@
 
   /* ---------main work start-----------*/
   .work {
-    padding: 80px 100px;
+    padding: 60px 5vmin;
   }
   .work .work-item .work-item__text {
     padding-top: 24px;
     position: relative;
-    /* left: -35%; */
-    text-align: left;
     opacity: 0;
+    text-align: center;
     visibility: hidden;
+    padding: 0 30px;
+    box-sizing: border-box;
   }
   @media (max-width: 768px) {
     .work {
@@ -862,43 +821,44 @@
     text-align: center;
     }
   }
-
-  .work .work-item .work-item__text.second {
-    /* left: 35%; */
-    text-align: right;
-  }
-  @media (max-width: 768px) {
+  /* @media (max-width: 768px) {
     .work .work-item .work-item__text.second {
     left: 0;
     text-align: center;
     }
-  }
+  } */
   .work .work-item .work-item__title {
     font-size: 30px;
     font-family: "Helvetica", "roboto", "Noto Sans TC", arial, sans-serif;
     font-weight: bold;
     color: #444444;
     position: relative;
+    margin: 6vmin 0;
   }
   .work .work-item .work-item__intro {
     font-size: 16px;
     line-height: 32px;
     position: relative;
-    /* left: 30%; */
+    letter-spacing: 2px;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     .work .work-item .work-item__intro {
-    left: 0;
-    text-align: center;
-    font-size: 12px;
+      font-size: 14px;
     }
   }
   @media (max-width: 768px) {
+    .work .work-item .work-item__intro {
+      left: 0;
+      text-align: center;
+      font-size: 12px;
+    }
+  }
+  /* @media (max-width: 768px) {
     .work .work-item .work-item__intro.second {
     left: 0;
     text-align: center;
     }
-  }
+  } */
   .work .imgbox {
     width: 100%;
     overflow: hidden;
@@ -928,14 +888,20 @@
     position: relative;
     margin-top: 15px;
     box-sizing: border-box;
-    font-size: 16px;
+    font-size: 12px;
     font-family: "Helvetica", "roboto", "Noto Sans TC", arial, sans-serif;
     letter-spacing: 0;
     text-decoration: none;
     color: black;
     position: relative;
-    font-weight: bold;
-    /* left: 70%; */
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    padding: 10px 20px;
+    transition: 1.5s;
+    letter-spacing: 1.5px;
+  }
+  .work .text-btn:hover {
+    color: #ffffff
   }
   @media (max-width: 768px) {
     .work .text-btn {
@@ -953,22 +919,24 @@
   .work .text-btn:before {
     content: "";
     position: absolute;
-    bottom: -10px;
-    left: 0;
     width: 100%;
-    height: 2px;
+    height: 100%;
+    left: 0;
+    top: 0;
     transform: scaleX(0);
-    background-color: black;
-    transition: 0.5s;
+    z-index: -1;
+    transition: .5s;
   }
   .work .text-btn:hover:before {
+    background-color: black;
     transform: scaleX(1);
+    transition: .5s;
   }
   /* ---------main work end-----------*/
 
   /* ---------main contact start-----------*/
   .contact {
-    padding: 80px 5vw;
+    padding: 60px 5vw;
   }
   .contact__description {
     padding-bottom: 30px;
@@ -978,56 +946,6 @@
       text-align: center;
     }
   }
-  /* .contact .form {
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: left;
-  }
-  .contact .form input[type='text'], .contact .form input[type='phone'], .contact .form input[type='email'], .contact .form textarea {
-    display: inline-block;
-    border: 1px solid white;
-    outline: none;
-    box-sizing: border-box;
-    width: 100%;
-    background-color: transparent;
-    color: white;
-    transition: all 0.3s;
-    padding: 5px 0px;
-  }
-  .contact .form input[type='text']:focus, .contact .form input[type='phone']:focus, .contact .form input[type='email']:focus, .contact .form textarea:focus {
-    border: 1px solid #ed5204;
-    box-sizing: border-box;
-  }
-  .contact .form textarea {
-    resize: none;
-  }
-  .contact .form label {
-    display: inline-block;
-    color: white;
-    margin-bottom: 10px;
-    margin-top: 10px;
-  }
-  .contact .form .submit {
-    padding: 10px 30px;
-    margin-top: 32px;
-    font-size: 14px;
-  }
-  .contact .divide-text {
-    color: white;
-    margin-top: 80px;
-    margin-bottom: 80px;
-    font-size: 28px;
-    line-height: 32px;
-    text-align: center;
-  }
-  .contact .info {
-    text-align: left;
-  }
-  .contact .info .fab {
-    font-size: 32px;
-    margin: 0px 15px;
-    transition: all 0.3s;
-  } */
 .info .fab:hover {
     color: white;
     opacity: 1;
@@ -1036,14 +954,13 @@
   }
 .info .info__email,.info .info__phone {
     margin-bottom: 15px;
-    letter-spacing: 3px;
+    letter-spacing: 2.5px;
   }
 .skills p {
     font-size: 14px;
   }
 .info .info__email a,.info .info__phone a {
     font-size: 16px;
-    font-family: "Helvetica", "roboto", "Noto Sans TC", arial, sans-serif;
   }
 .social-bar {
     padding-top: 50px;
@@ -1062,8 +979,7 @@
   /* ---------main footer start-----------*/
   .footer .copyright {
     text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin: 30px 0;
     padding: 0px 5vw;
   }
   @media (max-width: 768px) {
@@ -1075,58 +991,8 @@
     }
   }
   /* ---------main footer end-----------*/
-  
-  /* .autobiographyAll {
-    padding: 80px 5vw;
-  }
-  .autobiography {
-    max-width: 1280px;
-    width: 100%;
-    display: flex;
-  }
-  .autobiography .autobiography__ch, .autobiography .autobiography__en {
-    padding: 30px;
-    position: relative;
-    max-width: 640px;
-    width: 100%;
-  }
-  .autobiography .autobiography__ch:hover:after, .autobiography .autobiography__ch:hover:before, .autobiography .autobiography__en:hover:after, .autobiography .autobiography__en:hover:before {
-    opacity: 0;
-  }
-  .autobiography .autobiography__ch:after, .autobiography .autobiography__en:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    transition: 0.5s;
-  }
-  .autobiography .autobiography__ch:before, .autobiography .autobiography__en:before {
-    content: "profile";
-    position: absolute;
-    text-align: center;
-    color: white;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    font-size: 30px;
-    letter-spacing: 3px;
-    transition: 0.5s;
-  }
-  .autobiography .autobiography__ch .autobiography__ch__title, .autobiography .autobiography__ch .autobiography__en__title, .autobiography .autobiography__en .autobiography__ch__title, .autobiography .autobiography__en .autobiography__en__title {
-    text-align: center;
-    font-size: 20px;
-    font-weight: bold;
-  }
-  .autobiography .autobiography__ch .autobiography__ch__content, .autobiography .autobiography__ch .autobiography__en__content, .autobiography .autobiography__en .autobiography__ch__content, .autobiography .autobiography__en .autobiography__en__content {
-    letter-spacing: 2px;
-    font-size: 12px;
-    line-height: 1.5;
-  }
-   */
+
+
 /* --------------------------keyframes start----------------------------- */
 /****************** landingPage1 start ******************/
 /* @keyframes loadPageFadeOut {
@@ -1875,10 +1741,6 @@
   }
 
 /******************* person end *******************/
-
-
-
-
 
 
   /* --------------------------keyframes end----------------------------- */
